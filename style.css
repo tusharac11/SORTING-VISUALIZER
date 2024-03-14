@@ -1,0 +1,292 @@
+*:focus,button:focus{
+    outline: none;
+}
+body{
+    /* background-color: rgb(207, 221, 10); */
+    font-family:"Catamaran", sans-serif ;
+    color: #ccc;
+    background-color: #ccc;
+    
+}
+.display-none{
+    display: none;
+}
+.display-flex{
+    display: flex;
+}
+#array-container{
+    height: 290px;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+#array{
+    margin: 1em auto;
+}
+.element {
+    display: inline-block;
+    border-radius: 5px;
+}
+.container{
+    border: 1px solid black;
+    /* margin-top: 2rem; */
+    border-radius: 8px;
+    background-color: #7b7b79;
+ /* margin-bottom:  3px; */
+ /* height: 300px; */
+ 
+
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#no-algo-warning {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 250;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+#algo-container {
+    max-width: 1000px;
+    margin: 1em auto;
+    /* background-color: #bbb; */
+}
+.algo-btn, #sort, #randomize{
+    background-color: #222;
+    margin: 5px 2px;
+    padding: 6px 7px;
+    color: #ccc;
+    font-size: 1.2 rem;
+    border: none;
+    border-radius: 4px;
+}
+.algo-btn:hover, .algo-btn-active {
+    background-color: #ccc;
+    color: #222;
+    border: 1px solid red;
+}
+#sort {
+    float: right;
+    background-color: rgb(233, 165, 143);
+    color: black;
+}
+#sort:hover, #randomize:hover {
+    opacity: 0.8;
+    background-color: #ccc;
+    border: 1px solid black;
+    transition:0.5 ease ease-in-out;
+    color: #2b0303;
+}
+#sort:disabled, #randomize:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+#change-container {
+    max-width: 500px;
+    margin: 1em auto;
+}
+#randomize, .slider-container {
+    vertical-align: middle;
+}
+#randomize {
+    background-color: rgb(248, 31, 24);
+    color: #ddd;
+}
+#sliders{
+    float: right;
+}
+.slider-container{
+    display: inline-block;
+    margin-left: 20px;
+}
+.slider-container label {
+    display: block;
+    margin: 0;
+    text-align:left;
+    font-size: 1.2em;
+    color: #2b0303;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 130px;
+    height: 15px;
+    background-color: transparent;
+}
+.slider::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+    background-color: #a34141;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider::-moz-range-track {
+    height: 5px;
+    background-color: #250f0f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider::-moz-range-progress{
+    height: 5px;
+    background-color: #777;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #222;
+    border: 2px solid #ccc;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-top: -5px;
+}
+.slider::-moz-range-thumb{
+    background-color: #222;
+    border: 2px solid #ccc;
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.slider:disabled {
+    opacity: 0.5;
+}
+.slider:disabled::-webkit-slider-runnable-track {
+    cursor: not-allowed;
+}
+
+.slider:disabled::-moz-range-track {
+    cursor: not-allowed;
+}
+
+.slider:disabled::-moz-range-progress {
+    cursor: not-allowed;
+}
+
+.slider:disabled::-moz-range-thumb {
+    cursor: not-allowed;
+}
+.dot{
+    height: 14px;
+    width: 17px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    border: .8px solid black;
+    
+}
+.information{
+    display: flex;
+    /* background-color: #d19834; */
+}
+ul{
+    display: flex;
+    margin-top: 2rem;
+}
+li{
+    color: #250f0f;
+    font-size: 13px;
+    font-weight: 600;
+    margin:  2rem;
+  /* padding: 1rem; */
+}
+span{
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+.sorted{
+    background-color: green;
+}
+.unsorted{
+    background-color:#ccc;
+}
+.compare{
+    background-color: crimson;
+}
+.left{
+    background-color: rgb(214, 183, 7);
+}
+.right{
+    background-color: rgb(231, 119, 78);
+}
+.selected{
+    background-color: blueviolet;
+}
+
+.dropbtn {
+    background-color: #222;
+    margin: 5px 2px;
+    padding: 6px 7px;
+    color: #ccc;
+    font-size: 1.2 rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1px;
+    transition: transform 10s ease-in-out;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ccc;
+    color: #250f0f;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    height: 120px;
+    width: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* background: transparent; */
+    background-color: #ccc;
+    font-style: italic;
+
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  
+  .show {display:block;}
+
+
+  
+  @media (max-width:990px){
+    .information{
+        display: none;
+    }
+  }
